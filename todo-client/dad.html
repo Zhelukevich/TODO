@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script type="module">
+    import { initPage } from './todo-app/page.js';
+    initPage('dad', 'Дела папы', 'local');
+  </script>
+</head>
+
+<body>
+  <div class="container mb-5">
+    <div class="d-flex justify-content-between">
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Мои дела</a>
+        <a class="nav-link" href="dad.html">Дела папы</a>
+        <a class="nav-link" href="mom.html">Дела мамы</a>
+      </nav>
+      <button id="storage" type="button" class="btn btn-success">
+        Перейти на локальное хранилище
+      </button>
+    </div>
+  </div>
+  <div id="todo-app" class="container"></div>
+</body>
+
+</html>
